@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master's Projects</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/msc.css">
+</head>
+<body>
+    <aside class="vertical-timeline">
+        <div class="timeline">
+            <a href="#year-1-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year"> Mathematics</span>
+                </div>
+            </a>
+    
+            <a href="#year-2-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Computer Science</span>
+                </div>
+            </a>
+    
+            <a href="#year-3-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Dissertation</span>
+                </div>
+            </a>
+    
+            <a href="#extra-curricular-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Extra-Curricular</span>
+                </div>
+            </a>
+
+
+        </div>
+    </aside>
+    
+    
+
+    <!-- Navigation Section (if applicable) -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Intro Section -->
+    <section id="intro-section">
+        <h2>MSc Data Science and Analytics</h2>
+        <p>As I progress through data science, I learn more and more about the field and gain a better appreciation for it.</p>
+    </section>
+
+    <!-- Sem 1 Section -->
+    <section id="year-1-section" class="year-section">
+        <h3>Mathematics</h3>
+        <p>
+            I began the course by building a strong foundation in mathematical principles and theoretical concepts, 
+            which provided the essential background needed to comprehend and apply more advanced processes and methodologies.
+        </p>
+
+        <!-- Operational Reseearch -->
+        <div class="project-card">
+            <div class="project-content">
+                <h4>Operational Research</h4>
+                <p>
+                    I explored the concepts of linear programming using software like Simul8 and Vensim. 
+                    This module primarily focused on mathematically optimizing various processes and systems. 
+                    I found this knowledge particularly valuable, as it's essential for roles in consultancy, where optimizing business operations and strategies is often a key responsibility.                
+                </p>
+                <p>
+                    I prepared a report assessing the efficiency of a blood testing center, where I developed a Simul8 model to analyze its performance. 
+                    I then designed alternate simulations by modifying key variables, allowing me to evaluate whether the proposed changes improved overall operational efficiency.
+                </p>
+                <a href="assets/images/msc/ops_cw.pdf" target="_blank" class="project-link">View Report</a>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="project-card">
+            <div class="project-content">
+                <h4>Statistics</h4>
+                <p>
+                    This module centered on both foundational and advanced statistical concepts using R. 
+                    I explored key topics like Bayes' theorem and Simpson's paradox, developing a deeper understanding of their real-world applications. 
+                    The primary focus was on conducting and interpreting tests such as t-tests and ANOVA, which significantly enhanced my ability to derive meaningful insights and conclusions from data-driven analysis.   
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Year 2 Section -->
+    <section id="year-2-section" class="year-section">
+        <h3>Computer Science</h3>
+        <p>
+            I developed a comprehensive understanding of core computer science principles, focusing on the foundational techniques that power data-driven problem-solving. 
+            This involved mastering the logic behind algorithms, data structures, and modeling approaches, all of which set the stage for advanced applications in analysis, visualization, and decision-making processes.        
+        </p>
+        <p>
+            
+        </p>
+        <!-- Applied machine learning -->
+        <div class="project-card">
+            <div class="project-content">
+                <h4>Machine Learning</h4>
+                <p>
+                    Throughout this learning experience, I've delved deeply into the theoretical foundations of machine learning, understanding concepts like model selection, bias-variance trade-off, and performance metrics. 
+                    I've explored key topics such as data preprocessing, scaling, and encoding, which are essential to preparing datasets for accurate model predictions.
+                </p>
+                <p>
+                    I've just been introduced to actually using this in Python wherein I'll be assigned projects on it very soon.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Project 3: Coffee Machine Simulation -->
+        <div class="project-card coffee-machine">
+            <div class="project-content">
+                <h4>Computational Data Science</h4>
+                <p>
+                    Within this module, I've learned more on defining my own functions with Python. I've created functions to filter throughout text to find data quickly. 
+                    This project helped me learn more about how Python can be used for text rather than just creating charts and figures.
+                </p>
+                <a href="https://github.com/talib275/defining_functions/blob/main/functions.py" target="_blank" class="project-link">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project 3: Coffee Machine Simulation -->
+        <div class="project-card coffee-machine">
+            <div class="project-content">
+                <h4>Database Modelling</h4>
+                <p>
+                    I've been learrning basic principles of SQL on DB Browser SQLite. 
+                </p>
+                <p>
+                    While I'm still new to this, I've learned commands such as: SELECT, WHERE, NOT, LIKE, SUM, AVG. I hope to improve a lot more in the future.
+                </p>
+                <a href="assets\images\msc\northwind.sqbpro" target="_blank" class="project-link">Download Database</a>
+            </div>
+        </div>
+        
+
+
+        <!-- Project 4: R Programming for Data Analysis -->
+        <div class="project-card coffee-machine">
+            <div class="project-content">
+                <h4>Data Visualization</h4>
+                <p>
+                    What makes a good visualization? Colour scheming, fonts, labelling, the right chart to use etc.
+                    Essentially learning the theory behind making a good visualization.
+                </p>
+                <p>
+                    I am execting to take this further over the weeks and learn how to use D3 to make visualizations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Year 3 Section -->
+    <section id="year-3-section" class="year-section">
+        <h3>Dissertation</h3>
+        <p>
+            I have yet to start my dissertation but I'll update as I go along.
+        </p>
+    </section>
+
+    <!--Extra-Curricular-->
+    <section id="extra-curricular-section" class="year-section">
+        <h3>Extra-Curricular</h3>
+        <p>
+            As I've been very busy with my course and other projects, also given that I don't live in Cardiff, I haven't been able to experience as much unfortunately.
+            However, I am still enjoying myself, I've been a bit more focused on my career rather than extra-curricular activites. Having said that I still took on the responsibility of course rep.
+        </p>
+        <div class="project-card">
+            <h4>Course Representative</h4>
+            <p>
+                I took on the role of course representative for my cohort, primarily working with the School of Computer Science. 
+                My responsibilities included gathering and addressing concerns from my classmates and effectively communicating them to higher authorities, including lecturers, until the issues were resolved.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

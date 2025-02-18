@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talib: About Me</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header-placeholder"></div>
+    <script>
+        // Dynamically load the navigation
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Intro Section -->
+    <section id="intro-section">
+        <h2>Brief Summary</h2>
+        <p>A little bit about where I come from.</p>
+    </section>
+
+    <aside class="vertical-timeline">
+        <div class="timeline">
+            <a href="#background-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">2002</span>
+                    <h4>Background</h4>
+                </div>
+            </a>
+    
+            <a href="#school-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">2007-2020</span>
+                    <h4>School</h4>
+                </div>
+            </a>
+    
+            <a href="#bachelor-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">2020-2024</span>
+                    <h4>Bachelor's</h4>
+                </div>
+            </a>
+    
+            <a href="#masters-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">2024 (ongoing)</span>
+                    <h4>Master's</h4>
+                </div>
+            </a>
+        </div>
+    </aside>
+    
+    
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Background Section -->
+        <section id="background-section" class="about-section">
+            <div class="section-container">
+                <div class="text-block">
+                    <h3>Background</h3>
+                    <p>I was born in East London, and my family moved to Bristol when I was six months old. I mainly grew up in Bristol. I am ethnically Bengali and Muslim.</p>
+                </div>
+                <img src="assets/images/baby.jpg" alt="Childhood Photo" class="about-image">
+            </div>
+        </section>
+    
+        <!-- School Section -->
+        <section id="school-section" class="about-section">
+            <div class="section-container reverse">
+                <div class="text-block">
+                    <h3>School</h3>
+                    <p>I did most of my schooling in Bristol, UK. What I liked most about my schools here was the rich ethnic diversity, which helped me appreciate people for who they are.</p>
+                    <p>I moved to Muscat during high school. The transition was difficult, leaving friends behind and starting over. However, looking back, I am glad I moved. It helped me develop strong social skills and the confidence to communicate with almost anyone!</p>
+                </div>
+                <img src="assets/images/skl_office.jpg" alt="School Life" class="about-image">
+            </div>
+        </section>
+    
+        <!-- Bachelor's Section -->
+        <section id="bachelor-section" class="about-section">
+            <div class="section-container">
+                <div class="text-block">
+                    <h3>Bachelor's</h3>
+                    <p>I pursued Bioengineering at Loughborough University. Although it was challenging and conceptually interesting, I often found myself struggling with the biological aspects.</p>
+                    <p>Everything changed in my second year when I started taking modules linked to data science, such as statistics and data analysis. A friend pursuing data science after mechanical engineering inspired me to consider this field seriously. From that point on, I knew programming and analyzing data was the path for me.</p>
+                </div>
+                <img src="assets/images/luff_grad.jpg" alt="Loughborough Life" class="about-image">
+            </div>
+        </section>
+    
+        <!-- Master's Section -->
+        <section id="masters-section" class="about-section">
+            <div class="section-container reverse">
+                <div class="text-block">
+                    <h3>Master's</h3>
+                    <p>I am currently pursuing my master's in Data Science and Analytics at Cardiff University. It has been exciting to explore new concepts and tools, and I’m eager to see where this path takes me.</p>
+                    <p>However, I remain curious and cautious about the future of the field. Will AI take over many roles? I don’t have an answer yet, but I’m determined to use my evolving skill set to create impactful solutions.</p>
+                </div>
+                <img src="assets/images/Cardiff_University_logo.png" alt="Cardiff Journey" class="about-image">
+            </div>
+        </section>
+
+        <section id="quote-section" class="quote-section">
+            <blockquote>"Fail early, fail often, fail forward." – Will Smith</blockquote>
+            <p class="quote-explanation">
+                We fail all the time, it's a part of life. Sometimes the failures are so great we feel like giving up. But in reality, every failure is an opportunity to learn something new, and to become better next time.
+            </p>
+        </section>
+        
+        
+    
+        <p class="closing-message">Feel free to explore my projects and experiences through the other sections of this website!</p>
+    
+        <!-- CV Download Bubble -->
+        <div id="cv-bubble">
+            <a href="assets/images/Talib_CV.pdf" download="Talib_CV.pdf">Download My CV</a>
+        </div>
+    </main>
+    
+    <script src="assets/js/script.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talib: All About Me</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Dynamically load the navigation
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+         <section id="intro-section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This portfolio showcases my projects, experiences, and education. Explore each section by clicking the bubbles below!</p>
+        </section>
+        
+        </nav>
+        
+    </header>
+        
+     <!-- Bubbles Section -->
+     <section id="bubbles-section">
+        <a href="msc.html" class="bubble" data-section="msc">MSc Data Science</a>
+        <a href="beng.html" class="bubble" data-section="beng">BEng Bioengineering</a>
+        <a href="skills.html" class="bubble" data-section="interpersonal">Skills/Hobbies</a>
+        <a href="programming.html" class="bubble" data-section="programming">Programming</a>
+        <div id="cv-bubble">
+            <a href="assets/images/Talib_CV.pdf" download="Talib_CV.pdf">Download My CV</a>
+        </div>
+    </section>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioengineering Projects</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/beng.css">
+</head>
+<body>
+    <aside class="vertical-timeline">
+        <div class="timeline">
+            <a href="#year-1-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year"> Year 1</span>
+                </div>
+            </a>
+    
+            <a href="#year-2-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Year 2</span>
+                </div>
+            </a>
+    
+            <a href="#year-3-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Year 3</span>
+                </div>
+            </a>
+    
+            <a href="#extra-curricular-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Extra-Curricular</span>
+                </div>
+            </a>
+
+            <a href="#reflections-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year">Final Reflections</span>
+                </div>
+            </a>
+        </div>
+    </aside>
+    
+    
+
+    <!-- Navigation Section (if applicable) -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Intro Section -->
+    <section id="intro-section">
+        <h2>Bioengineering Journey</h2>
+        <p>Throughout my undergraduate studies in Bioengineering at Loughborough University, I gained valuable experience in technical design, data analysis, and interdisciplinary problem-solving.</p>
+    </section>
+
+    <!-- Year 1 Section -->
+    <section id="year-1-section" class="year-section">
+        <h3>Year 1: Laying the Foundations</h3>
+        <p>
+            During my first year of university, I focused on building a solid understanding of fundamental engineering concepts. The coursework covered essential mathematical principles for engineering, including mechanics and thermodynamics. 
+            Alongside this, I delved into biological topics, exploring areas such as human anatomy and molecular biology, which helped establish a multidisciplinary foundation for my studies.
+        </p>
+
+        <!-- Project 1: CAD Hand Sketching -->
+        <div class="project-card">
+            <img src="assets/images/beng/y1_cad_hand.png" alt="CAD Hand Drawing" class="project-image">
+            <div class="project-content">
+                <h4>Siemens NX</h4>
+                <p>
+                    In one group assignment, we were tasked with designing a prosthetic hand using CAD. The project was both challenging and confusing, especially as it took place during lockdown when in-person meetings weren't possible, and we were still adjusting to online collaboration. 
+                    Despite these challenges, the experience was incredibly rewarding. 
+                    I thoroughly enjoyed exploring the various implementations of CAD, and the assignment ultimately became a fun and memorable learning experience.
+                </p>
+                <a href="assets/images/beng/y1_cad_hand.png" target="_blank" class="project-link">View Image</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Year 2 Section -->
+    <section id="year-2-section" class="year-section">
+        <h3>Year 2: Technical Projects and Data Analysis</h3>
+        <p>
+            In my second year, I concentrated on technical subjects such as statistics and digital systems. 
+            This period marked the beginning of my passion for data science, as I discovered a genuine enjoyment in programming and generating meaningful visual representations through data analysis. 
+            The hands-on experience of interpreting and presenting data solidified my interest in the field.
+        </p>
+        <p>
+            While other modules emphasized expanding our knowledge of biological systems, my primary interest laid in the computational aspects, where I could apply programming and data-driven approaches to solve problems.
+        </p>
+
+        <!-- Project 2: Multisim Circuit Design -->
+        <div class="project-card">
+            <img src="assets/images/beng/y2_multisim.png" alt="Multisim Circuit" class="project-image">
+            <div class="project-content">
+                <h4>NI Multisim</h4>
+                <p>
+                    I was introduced to logic design and NI Multisim, where we worked on circuit design projects. 
+                    This experience deepened my understanding of electronic systems and allowed me to appreciate how binary logic operates within everyday electronic devices that we might not typically associate with computers or machines.
+                </p>
+                <a href="assets/images/beng/y2_multisim.png" target="_blank" class="project-link">View Image</a>
+            </div>
+        </div>
+
+
+        <!-- Project 3: Coffee Machine Simulation -->
+        <div class="project-card coffee-machine">
+            <img src="assets/images/beng/y2_coffee_machine.png" alt="Coffee Machine Design" class="project-image">
+            <div class="project-content">
+                <h4>Coffee Machine Project</h4>
+                <p>
+                    This project allowed me to apply logic systems to a real-world problem, which initially proved to be quite challenging. 
+                    When I encountered difficulties understanding certain concepts, I reached out to peers for guidance. 
+                    Their support, combined with my persistence, enabled me to grasp the material and successfully complete the assignment.
+                </p>
+                <a href="assets/images/beng/y2_coffee_machine.pdf" target="_blank" class="project-link">View Project</a>
+                <a href="assets/images/beng/y2_coffee_machine.png" target="_blank" class="project-link">View Image</a>
+            </div>
+        </div>
+
+        
+
+
+        <!-- Project 4: R Programming for Data Analysis -->
+        <div class="project-card coffee-machine">
+            <img src="assets/images/beng/y2_r.png" alt="R Output" class="project-image">
+            <div class="project-content">
+                <h4>R Programming</h4>
+                <p>
+                    My statistics assignment introduced me to RStudio, where I tackled various data-driven problems using R. 
+                    The report showcases my solutions to the assigned questions, highlighting my application of data visualization techniques and analytical methods to derive meaningful insights.
+                </p>
+                <a href="assets/images/beng/y2_stats.pdf" target="_blank" class="project-link">View Report</a>
+                <a href="assets/images/beng/y2_r.png" target="_blank" class="project-link">View Image</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Year 3 Section -->
+    <section id="year-3-section" class="year-section">
+        <h3>Year 3: Further Research</h3>
+        <p>
+            My final year primarily focused on theoretical research and some lab-based analysis, 
+            deepening my appreciation for the real-world impact of bioengineering and its potential to address critical challenges in healthcare and technology.
+        </p>
+
+        <!-- Project 6: MATLAB Data Analysis -->
+        <div class="project-card">
+            <img src="assets/images/beng/y3_matlab_bars.png" alt="MATLAB Graphs" class="project-image">
+            <div class="project-content">
+                <h4>MATLAB</h4>
+                <p>
+                    I was tasked with analyzing data using both Excel and MATLAB, which fueled my deeper interest in data science. 
+                    I particularly enjoyed creating insightful visualizations and determining which formats were the most effective and user-friendly for analysis.
+                </p>
+                <a href="assets/images/beng/y3_matlab_bars.png" target="_blank" class="project-link">View Image</a>
+            </div>
+        </div>
+
+        <!-- Project 5: Bone Regeneration Study -->
+        <div class="project-card" id="report-only">
+            <h4>Bone Regeneration</h4>
+            <p>
+                One of my research assignments involved exploring studies in bone tissue engineering. 
+                This experience not only enhanced my understanding of bone growth and regeneration processes but also improved my research skills, from gathering information to synthesizing findings effectively.
+            </p>
+            <a href="assets/images/beng/y3_bone_regen.pdf" target="_blank" class="project-link">View Report</a>
+        </div>
+
+        
+
+        <!-- Project 7: Neural Cells and Hydrogels -->
+        <div class="project-card" id="report-only">
+            <h4>Neural Cell Culture</h4>
+            <p>
+                My dissertation focused on a theoretical investigation into how cultured neural cells can be transported using hydrogels. 
+                Through this research, I explored and analyzed various materials to identify the optimal composition of hydrogels that would yield the most effective results for cell transport and viability.
+            </p>
+            <a href="assets/images/beng/y3_neural_cells.pdf" target="_blank" class="project-link">View Report</a>
+        </div>
+    </section>
+
+    <!--Extra-Curricular-->
+    <section id="extra-curricular-section" class="year-section">
+        <h3>Extra-Curricular</h3>
+        <p>
+            Whilst at Loughborough I took part in a lot of different events and activities.
+        </p>
+        <div class="project-card">
+            <h4>Student Ambassador</h4>
+            <p>
+                I took on the role of Student Ambassador for the AACME School (Aero, Auto, Chemical, and Materials Engineering). 
+                In this role, I was responsible for highlighting the impressive offerings of the engineering faculty to prospective students, providing them with insights into academic programs, facilities, and campus life.
+            </p>
+
+            <p>
+                I also served as a general Student Ambassador for the university, where I played a key role during open days and events. My responsibilities included leading campus tours, distributing informational leaflets, and assisting visitors with directions. 
+                Additionally, I contributed to event setup, catering, and cleanup, ensuring a smooth and welcoming experience for prospective students and their families.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h4>Sports</h4>
+            <p>
+                Introductions at uni often began with, "Hey, what's your name? What sport do you do?"—which meant I had to get involved in a sport! 
+                There were only two sports I had shown interest in before attending university, and I decided to give both of them a try.
+            </p>
+            <h5>Boxing</h5>
+            <p>
+                In my second year, I decided to try out boxing to learn the basic movements and engage in something worthwhile. 
+                I enjoyed the experience, even though it was physically exhausting. 
+                Unfortunately, I had to give it up as balancing it with my studies became challenging. 
+                However, I'm open to trying a different martial art in the future.
+            </p>
+            <h5>Scuba Diving</h5>
+            <p>
+                In my third year, I gave scuba diving a try, and it was an incredible experience! I absolutely hated the cold water, but the adventure made it all worthwhile. 
+                One challenge I faced was the buildup of water pressure affecting my ears, though it wasn't too severe. 
+                I've almost earned my BSAC Ocean Diver license, and I look forward to going on more dives in the future!
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h4>Societies</h4>
+            <p>
+                I joined a variety of societies, including the Hindu, Islamic, Gaming, Ghanaian, and Oriental societies, among others. Attending events hosted by such diverse groups allowed me to broaden my cultural awareness while honing my networking skills. 
+                This experience helped me build meaningful connections and take my interpersonal growth to the next level.
+            </p>
+            <p>
+                I actively contributed by helping set up events, managing clean-up, and promoting activities within the societies. I truly enjoyed the flexibility of being involved with such diverse events, meeting people from various backgrounds, and engaging in meaningful interactions.            
+            </p>
+        </div>
+    </section>
+
+    <!--Extra-Curricular-->
+    <section id="reflections-section" class="year-section">
+        <h3>Final Reflections</h3>
+        <p>
+            My time at Loughborough was very enjoyable, everyday was something new. I value the connections I've made, and the lessons I've learnt. 
+            Whilst I never felt too passionate with bioengineering, Loughborough helped me find my interest for data science. 
+            For everything I have achieved, all the experiences, people, lectures, I am very grateful.
+        </p>
+    </section>
+</body>
+</html>

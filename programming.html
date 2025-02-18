@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Projects</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/programming.css">
+</head>
+<body>
+    <aside class="vertical-timeline">
+        <div class="timeline">
+            <a href="#year-1-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year"> Python </span>
+                </div>
+            </a>
+    
+            <a href="#year-2-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year"> Web Design </span>
+                </div>
+            </a>
+
+            <a href="#reflections-section" class="timeline-event-link">
+                <div class="event">
+                    <span class="timeline-year"> Reflections </span>
+                </div>
+            </a>            
+        </div>
+    </aside>
+    
+    
+
+    <!-- Navigation Section (if applicable) -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Intro Section -->
+    <section id="intro-section">
+        <h2>Programming Journey</h2>
+        <p>These are additional coding projects I've done in my free time to improve my proficiency.</p>
+    </section>
+
+    <!-- Year 1 Section -->
+    <section id="year-1-section" class="year-section">
+        <h3>Python</h3>
+        <p>
+            I've done a lot of Python work on my own to build my experiences. I've learnt many concepts and hope to advance my expertise much further.
+        </p>
+
+        
+        <div class="project-card">
+            <div class="project-content">
+                <h4>Bright Network: Couch to Coder 2023</h4>
+                <p>
+                    I took on a summer project hosted by Bright Network to develop my programming skills. It consisted of 4 sessions going through the basics of python, 
+                    learning how to print, allow the user to input (etc.), up to making lists, dictionaries and even extracting data from a MS Excel database.
+                </p>
+                <a href="https://github.com/talib275/couchtocoder" target="_blank" class="project-link">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+                <h4>IBM: PY0101EN Module</h4>
+                <p>
+                    During the easter holidays of 2024, I discovered this python course on the edx website. I pursued it and I really enjoyed it. Whilst I found some aspects challenging, it really taught me a lot.
+                    I learnt concepts of webscraping using beautifulsoup, numpy, extracting from url, text and data analysis.
+                </p>
+                <a href="https://github.com/talib275/ibm_py0101en" target="_blank" class="project-link">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/images/programming/heatmap_london.png" alt="Heat Map" class="project-image">
+            <div class="project-content">
+                <h4>Data Analytics</h4>
+                <p>
+                    I attempted to use my skills and visualise data from a dataset I found online to make graphs based on it. I utilised someone else's code for a map of London to create a heat map. 
+                    This introduced me to seaborn and using json. While I still don't fully understnad json, I am ready to learn and explore further.
+                </p>
+                <a href="https://github.com/talib275/data_analytics_project_2024/blob/main/data_analytics.ipynb" target="_blank" class="project-link">GitHub</a>
+                <a href="assets/images/programming/heatmap_london.png" target="_blank" class="project-link">View Image</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Year 2 Section -->
+    <section id="year-2-section" class="year-section">
+        <h3>Web Design</h3>
+        <p>
+            I still have a long way to go in my web designing but I still feel like I've learnt quite a bit. Naturally, I have used html, css and js to build my coding expertise in this field. I have been learning how to upload on GitHub and I hope to take my skills a lot further.
+        </p>
+
+        <!-- Project 2: Multisim Circuit Design -->
+        <div class="project-card">
+            <div class="project-content">
+                <h4>Bright Network: Couch to Coder 2024</h4>
+                <p>
+                    I did the Bright Network summer coding  program again in 2024 wherein I learnt how to design my own website. 
+                    I was taught how to make a site in the form of a blog. Whilst it is very messy, unprofessional and altogether purposeless, 
+                    I still uploaded it via GitHub; the link below can direct you to the site.
+                </p>
+                <a href="https://talib275.github.io/" target="_blank" class="project-link">View Site</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Extra-Curricular-->
+    <section id="reflections-section" class="year-section">
+        <h3>Reflections</h3>
+        <p>
+            I love coding! I think it's so amazing to be able to type things to life. Throughout all my experiences, I must say that I do enjoy Python the most.
+            It's very universal and becomes easier to use as I go along. I have recently been intrigued by SQL, I find it very interesting and hope to take those skills further as well.
+        </p>
+        <p>
+            I spend the least amount of time using MATLAB and R, so my skills might be quite rusty but if needed I'm sure I can quickly pick them back up. 
+            I've really been enjoying making websites like this using html, css and js. I honestly never thought I would be making my own websites but here I am! 
+        </p>
+        <p>
+            Am I worried about AI? No. Honestly, I've used AI a lot to help me learn so many different things including coding, help with my uni degrees, general advice on health and diet (etc.).
+            I think there will always be good and bad in everything and so the main point is how to utilise AI in the best way possible.
+        </p>
+    </section>
+</body>
+</html>

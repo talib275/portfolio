@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talib: All About Me</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Dynamically load the navigation
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <section id="intro-section">
+        <h2>Let's Connect</h2>
+        <p> I'd love to hear from you! Whether it's a job opportunity, a project idea, or just a friendly hello, feel free to reach out using the links below.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+       
+        <div class="contact-links">
+            <div class="tooltip">
+                <a href="#" id="email_link" class="contact-link" onclick="copyEmail()" onmouseout="resetTooltip()">✉️ thossain180@gmail.com</a>
+                <span class="tooltiptext" id="email_tooltip">Copy to clipboard</span>
+            </div>
+            <a href="https://www.linkedin.com/in/talib-hossain-2a734922a/" target="_blank" class="contact-link">🔗 LinkedIn</a>
+            <a href="https://github.com/talib275" target="_blank" class="contact-link">💻 GitHub</a>
+        </div>
+
+        
+    </section>
+
+    <div id="cv-bubble">
+        <a href="assets/images/Talib_CV.pdf" download="Talib_CV.pdf">Download My CV</a>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+#logo {
+    margin: 0px;
+    padding: 8px;
+    font-family: "Nerko One", sans-serif;
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),   /* Top left shadow */
+     1px -1px 0 rgb(255, 255, 255),   /* Top right shadow */
+    -1px  1px 0 rgb(255, 255, 255),   /* Bottom left shadow */
+     1px  1px 0 rgb(255, 255, 255);   /* Bottom right shadow */
+  font-weight: bold; /* Optional: Makes the font bolder for a stronger effect */
+    width: 15%;
+    border-radius: 100%;
+}
+
+
+
+#bubbles-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+// Function to expand a bubble
+bubbles.forEach(bubble => {
+    bubble.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent immediate link navigation
+
+        // Get bubble position
+        const rect = this.getBoundingClientRect();
+        const top = rect.top + window.scrollY; // Adjust for scroll position
+        const left = rect.left + window.scrollX;
+
+        // Set initial position and dimensions
+        this.style.position = 'absolute';
+        this.style.top = `${top}px`;
+        this.style.left = `${left}px`;
+
+        // Add the expand class for animation
+        this.classList.add('expand');
+
+        // Navigate to the linked page after animation
+        setTimeout(() => {
+            window.location.href = this.getAttribute('href');
+        }, 800); // Match animation duration
+    });
+});
+
+
+/* Bubbles Section */
+#bubbles-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+awesomefonts:
+email:
+<i class="fa-solid fa-envelope"></i>
+
+y2 R:
+The current had a main effect on the radiation, F(1,36) = 3.384e+31, p<2e-16
+The exposure time also had a main effect on the radiation, F(1,36) = 1.865e+32, p<2e-16
+There was a statistically significant interaction between the effects of current and exposure time on radiation, F(1,36)=4.089e+31, p<2e-16
+As the p-values are very low, the alternative hypotheses are accepted.
+
+
+
+<h3>Why Bioengineering?</h3>
+                    <p>
+                        I thought it was for me, honestly it sounded really cool. I still think it's an amazing subject, just not for me. However I do think a lot of good will come from this field.
+                        I joined in October 2020 and absolutely loved the 4 years I was there for. 
+                    </p>
+                    <p>
+                        Would I do it again? Absolutely!
+                        For me it was the connections and experiences I've made moreso than the course itself.
+                        However, it helped me discover my true passion: in the tech industry.
+                    </p>
+
+
+beng.html__________________________________________________________________________________________________________
+
+
+h2, h3 {
+    text-align: center;
+    color: #4B2C73; /* Loughborough purple for headings */
+}
+
+
+/* Year Sections */
+.year-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(75, 44, 115, 0.1); /* Subtle Loughborough purple tint */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.year-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4B2C73;
+}
+
+/* Project Cards */
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.project-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Content */
+.project-content {
+    flex-grow: 1;
+}
+
+.project-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4B2C73; /* Loughborough purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #3A2259; /* Darker purple for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .project-content {
+        text-align: center;
+    }
+}
+
+/* Default Project Image Styling */
+.project-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Styling for the Coffee Machine Image */
+.project-card.coffee-machine .project-image {
+    width: 300px; /* Custom width */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image,
+    .project-card.coffee-machine .project-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .project-content {
+        text-align: center;
+    }
+}
+
